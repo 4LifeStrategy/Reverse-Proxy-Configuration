@@ -39,6 +39,8 @@ You will need a terminal to ssh into the Snology NAS. In this demonstration we a
 
         sudo docker network create -d macvlan -o parent=eth0 --subnet=192.168.215.0/24 --gateway=192.168.215.1 --ip-range=192.168.215.198/32 nginx_network
 
+*For security I would go back to **Terminal & SNMP** and disable SSH*
+
 ## Installation
 
 We are going to deploy Nginx Proxy manager using synology Container Manager which runs off Docker.

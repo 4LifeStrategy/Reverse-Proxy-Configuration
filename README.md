@@ -11,7 +11,7 @@
 
 **Objective**: Configured a reverse proxy using Nginx Proxy Manager with SSL certificates managed through Cloudflare. Enhanced security and optimized traffic management for web applications.
 
-## Configuring a Macvlan Network Interface
+## Configuring Macvlan Network Interface
 
 As mentioned above, we’re configuring a macvlan network interface so that our Nginx Proxy Manager instance will have an entirely separate IP address and ports.
 
@@ -125,11 +125,10 @@ networks:
 8. Click **Next**
 9. Click **Done**
 
-## Initial Setup
+## Configure SSL Certificate
 
 Open a web browser and enter the ip address configured to access Nginx Proxy Manager instance. Enter the default email: admin@example.com and default password: changeme. You will be prompted to create an admin account with your email and password. Next we are going to configure SSL certificates. For this setup we are using Cloudflare for our domain's dns resolver and will need your API key.
 
-**SSL Certificate**
 1. Click **SSL Certificates**
 2. Click **Add SSL Certificate**
 3. Select **Let's Encrypt**
@@ -140,7 +139,8 @@ Open a web browser and enter the ip address configured to access Nginx Proxy Man
 8. For **Propagation Seconds** put **20**
 9. Click **Save**
 
-**Proxy Hosts**
+## Configure Proxy Hosts
+
 1. Click **Hosts** 
 2. Click **Add Proxy Host**
 3. For **Domain Name** enter **nginx.4lifestrategy.com**
